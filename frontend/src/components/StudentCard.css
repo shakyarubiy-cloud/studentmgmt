@@ -1,0 +1,85 @@
+.scard {
+  --ink: #1e1b3a;
+  --muted: #6b6f8a;
+  --line: #ebeaf5;
+  --accent: #4f46e5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgba(30, 27, 58, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.scard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -14px rgba(79, 70, 229, 0.35);
+}
+
+.scard-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* every photo gets the exact same box */
+  background: #eeedfb;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.scard-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+.scard-initial {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.scard-body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.scard-body h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  overflow-wrap: anywhere;
+}
+
+.scard dl { margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.scard dl div { display: flex; gap: 8px; font-size: 0.9rem; }
+.scard dt { color: var(--muted); min-width: 64px; }
+.scard dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+
+.scard-actions { display: flex; gap: 10px; margin-top: auto; padding-top: 4px; }
+.scard-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.scard-btn:hover { background: #eeedfb; }
+.scard-btn.danger { border-color: #dc2626; color: #dc2626; }
+.scard-btn.danger:hover { background: #fdecec; }
+.scard-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) { .scard { transition: none; } .scard:hover { transform: none; } }

@@ -1,0 +1,15 @@
+first make two folder 
+then frontend kko lai react setup: npm create vite@latest .(react,javascript choose)
+then npm install
+then npm install react-router-dom
+
+
+
+second backend folder
+1: npm init -y
+2:npm install express mysql2 cors
+3:npm install --save-dev nodemon (manually load garirakna naparos chage pac=xi vanera)
+
+download postman 
+
+npm install bcrypt jsonwebtoken dotenv
