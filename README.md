@@ -1,9 +1,7 @@
 Student Management System
-
 Student Management System is a full-stack web application built with React, Node.js, Express, and MySQL for managing student records and user authentication.
 
 Features:
-
 User registration and login
 Add student records
 View student records
@@ -16,7 +14,6 @@ Password hashing with bcrypt
 MySQL database integration
 
 Technologies Used:
-
 React
 JavaScript
 HTML
@@ -30,7 +27,6 @@ Multer
 CORS
 
 CRUD Operations:
-
 Create student records
 Read student records
 Update student information
@@ -51,31 +47,24 @@ studentmgmt/
 └── frontend/
 
 Installation:
-
 Clone the repository:
-
 git clone https://github.com/shakyarubiy-cloud/studentmgmt.git
 
 Navigate to the project folder:
-
 cd studentmgmt
 
 Backend:
-
 cd backend
 npm install
 npm start
 
 Frontend:
-
 Open another terminal:
-
 cd frontend
 npm install
 npm run dev
 
 Purpose:
-
 This project was created to practice full-stack web development, including React, Node.js, Express, CRUD operations, REST APIs, authentication, authorization, and MySQL database management.
 
 Ruby Shakya
